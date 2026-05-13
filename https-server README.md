@@ -185,3 +185,9 @@ A：不需要，`application/octet-stream` 即可，Unity 不依賴 Content-Type
 **Q：要怎麼傳檔案給後端？**  
 
 A：雙方討論後決定（SFTP / 共享資料夾 / 上傳介面皆可）
+
+## 八、注意事項
+
+---
+
+1. 由於Unity的Addressable系統本身並不支援相對路徑，因此就算是放在同一個根目錄底下，在Remote.LoadPath部分的設定前方還是必須加上URL，才抓的到東西
