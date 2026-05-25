@@ -191,3 +191,5 @@ A：雙方討論後決定（SFTP / 共享資料夾 / 上傳介面皆可）
 ---
 
 1. 由於Unity的Addressable系統本身並不支援相對路徑，因此就算是放在同一個根目錄底下，在Remote.LoadPath部分的設定前方還是必須加上URL，才抓的到東西
+
+2. 如果強制重新整理與刪除快取，前端讀取到的WebGL檔案都還是舊版的話，那是ServiceWorker的問題，進入F12 Dev模式，開啟應用程式，把ServiceWorkers的內容清除就可以了，Unity端則是要注意要出新內容的話就要改版號，才能強制ServiceWorker重新刷新
