@@ -1,4 +1,4 @@
-const cacheName = "TCIT-DCIM_NCHC-0.2.5";
+const cacheName = "TCIT-DCIM_NCHC-0.2.6";
 const contentToCache = [
     "TemplateData/style.css"
     // 注意：Unity build 檔案不放進 contentToCache
